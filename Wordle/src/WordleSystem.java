@@ -5,24 +5,31 @@ import java.io.InputStreamReader;
 import java.util.ArrayList;
 
 import model.Player;
-import model.Wordle;
 
 public class WordleSystem {
 
-	private Wordle wordle = new Wordle();
 	private Player player = new Player();
 	
-	// TODO the colors don't work on eclipse or at least didn't work on mine
-	// but they work on Visual Studio Code although then Vs Code couldn't run the WordleSystemTest
+	// Initialize colors for coloring terminal version
 	private static final String TEXT_YELLOW = "\u001B[33m";
 	private static final String TEXT_GREEN = "\u001B[32m";
 	private static final String TEXT_WHITE = "\u001b[0m";
 	// is black, there is no grey for ANSI
 	private static final String TEXT_GREY = "\u001B[30m";
 
-	private boolean wonLost = true;
+	// Initialize dictionary
+	private ArrayList<String> dictionaryList = new ArrayList<>();
 
-	// TODO word of day can only happen once a day
+	// Initialize guess attempts
+	private int currentGuessedWords = 0;
+
+	// Initialize word of the day
+	private String wordOfDay = "";
+
+	// Initialize default win/lose variable to lose (false)
+	private boolean wonLost = false;
+
+	// TO DO word of day can only happen once a day
 
 	// load the dictionary list from the dictionary list txt file
 	public void loadDictionaryList() {
@@ -36,23 +43,24 @@ public class WordleSystem {
 			}
 			file.close();
 			// call dictionaryList from wordle
-			wordle.setDictionaryList(wordPerLine);
+			this.dictionaryList = wordPerLine;
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
 
+	// sets the word of the day
+	public void setWordOfDay(String word) {
+		this.wordOfDay = word;
+	}
+
 	// loads the a random word of the day
 	public void loadWordOfDay() {
 		int randomIndexNum = (int) Math
-				.floor(Math.random() * (Wordle.MAX_DICTIONARY_WORDS - Wordle.MIN_DICTIONARY_WORDS + 1)
-						+ Wordle.MIN_DICTIONARY_WORDS);
+				.floor(Math.random() * 12947);
 		
 		// sets the word of the day by a random index
-		wordle.setWordOfDay(wordle.getDictionaryList().get(randomIndexNum));
-		
-		// Print the World of the day if u need to see it
-//		System.out.println(wordle.getWordOfDay());
+		setWordOfDay(this.dictionaryList.get(randomIndexNum));
 	}
 
 	// checks if the player's input is valid
@@ -64,14 +72,14 @@ public class WordleSystem {
 		else if (!playersGuess.matches("^[a-zA-Z]*$"))
 			return false;
 		// if is the Letter amount, e.g. 5 letters or not
-		else if (playersGuess.length() != Wordle.LETTER_AMOUNT)
+		else if (playersGuess.length() != 5)
 			return false;
 		return true;
 	}
 
 	// checks if the word the player used is in the dictionary list
 	public boolean isInDictionaryList(String playersGuess) {
-		if (!wordle.getDictionaryList().contains(playersGuess))
+		if (!this.dictionaryList.contains(playersGuess))
 			return false;
 		return true;
 	}
@@ -80,10 +88,10 @@ public class WordleSystem {
 	public void assignColors(String playersGuess) {
 		// changing the string of players guess and word of day to char array
 		char[] guessedWordLetters = new char[playersGuess.length()];
-		char[] wordOfDayLetters = new char[wordle.getWordOfDay().length()];
-		for (int i = 0; i < Wordle.LETTER_AMOUNT; i++) {
+		char[] wordOfDayLetters = new char[wordOfDay.length()];
+		for (int i = 0; i < 5; i++) {
 			guessedWordLetters[i] = playersGuess.charAt(i);
-			wordOfDayLetters[i] = wordle.getWordOfDay().charAt(i);
+			wordOfDayLetters[i] = wordOfDay.charAt(i);
 		}
 		
 		// loops through the letters of the player's guess
@@ -118,19 +126,23 @@ public class WordleSystem {
 		System.out.println(TEXT_WHITE);
 	}
 
+	public void setCurrentGuessedWords(int guesses) {
+		this.currentGuessedWords = guesses;
+	}
+	
 	// if the player's guessed word is equal to the word of the day
 	// - has the player won
 	public boolean isWordOfDay(String playersGuess) throws IOException {
 		// if the word of the day is not equal to the player's word guess
-		if (!wordle.getWordOfDay().equalsIgnoreCase(playersGuess)) {
+		if (!wordOfDay.equalsIgnoreCase(playersGuess)) {
 			// sets their current guess, since player didn't guess word of day
 			// they use up one of their guesses
-			wordle.setCurrentGuessedWords(wordle.getCurrentGuessedWords() + 1);
+			this.currentGuessedWords += 1;
 			// now if their current guesses used is max guesses they can guess
 			// return false to end game
-			if (wordle.getCurrentGuessedWords() == Wordle.MAX_GUESSES) {
+			if (this.currentGuessedWords == 6) {
 				// lost the game
-				System.out.println("Word of the Day: " + wordle.wordOfDay);
+				System.out.println("Word of the Day: " + wordOfDay);
 				wonLost = false;
 				gameStats(wonLost);
 				return false;

@@ -1,14 +1,13 @@
 import static org.junit.Assert.assertEquals;
+
 import java.io.IOException;
 import org.junit.Before;
 import org.junit.Test;
-import model.Wordle;
 
 public class WordleSystemTest {
 
 	private WordleSystem wordleSystem = new WordleSystem();
-	private Wordle wordle = new Wordle();
-
+	
 	@Before
 	public void setUp() {
 		wordleSystem.loadDictionaryList();
@@ -52,7 +51,7 @@ public class WordleSystemTest {
 	// assignColors
 	@Test
 	public void assignColors() {
-		wordle.setWordOfDay("angel");
+		wordleSystem.setWordOfDay("angel");
 		wordleSystem.assignColors("glean");
 		System.out.println("The colour should be YELLOW");
 		wordleSystem.assignColors("angel");
@@ -65,21 +64,21 @@ public class WordleSystemTest {
 
 	@Test
 	public void isWordOfDay_NotWordOfDay_GuessNotMax() throws IOException {
-		wordle.setWordOfDay("angel");
+		wordleSystem.setWordOfDay("angel");
 		assertEquals("Should return true", true, wordleSystem.isWordOfDay("bombs"));
 	}
 
 	@Test
 	public void isWordOfDay_NotTheWord_GuessIsMax() throws IOException {
-		wordle.setWordOfDay("angel");
-		wordle.setCurrentGuessedWords(5);
-		assertEquals("Should return true", false, wordleSystem.isWordOfDay("bombs"));
+		wordleSystem.setWordOfDay("angel");
+		wordleSystem.setCurrentGuessedWords(5);
+		assertEquals("Should return false", false, wordleSystem.isWordOfDay("bombs"));
 	}
 
 	@Test
 	// TODO it's not set the word of day for just the test
 	public void isWordOfDay_IsTheWord() throws IOException {
-		wordle.setWordOfDay("angel");
+		wordleSystem.setWordOfDay("angel");
 		assertEquals("Should return true", false, wordleSystem.isWordOfDay("angel"));
 	}
 }
