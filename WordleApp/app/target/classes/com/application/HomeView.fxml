@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="700.0" prefWidth="850.0" style="-fx-background-color: fff;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.HomeController">
+   <children>
+      <GridPane alignment="CENTER" layoutX="183.0" layoutY="86.0" prefHeight="600.0" prefWidth="500.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="0.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="100.0" minHeight="10.0" prefHeight="100.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label fx:id="zeroZero" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER">
+               <GridPane.margin>
+                  <Insets />
+               </GridPane.margin>
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="oneZero" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="twoZero" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="threeZero" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="fourZero" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed1stGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="zeroOne" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroOne" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="oneOne" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneOne" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="TwoOne" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoOne" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="ThreeOne" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeOne" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="FourOne" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourOne" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed2ndGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="ZeroTwo" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroTwo" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="OneTwo" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneTwo" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="TwoTwo" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoTwo" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="ThreeTwo" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeTwo" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="FourTwo" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="2">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourTwo" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed3rdGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="ZeroThree" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroThree" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="OneThree" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneThree" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="TwoThree" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoThree" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="ThreeThree" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeThree" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="FourThree" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="3">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourThree" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed4thGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="zeroFour" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroFour" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="oneFour" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneFour" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="twoFour" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoFour" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="threeFour" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeFour" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="fourFour" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="4">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourFour" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed5thGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="zeroFive" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputZeroFive" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="oneFive" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputOneFive" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="twoFive" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputTwoFive" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="threeFive" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputThreeFive" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+            <Label fx:id="fourFive" alignment="CENTER" contentDisplay="CENTER" minHeight="90.0" minWidth="90.0" prefHeight="90.0" prefWidth="90.0" style="-fx-background-color: fff; -fx-border-color: #000;" GridPane.columnIndex="4" GridPane.halignment="CENTER" GridPane.rowIndex="5">
+               <font>
+                  <Font size="36.0" />
+               </font>
+               <graphic>
+                  <TextField fx:id="inputFourFive" alignment="CENTER" editable="false" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed6thGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </TextField>
+               </graphic>
+            </Label>
+         </children>
+      </GridPane>
+      <Text layoutX="381.0" layoutY="51.0" strokeType="OUTSIDE" strokeWidth="0.0" text="WORDLE" textAlignment="CENTER" wrappingWidth="103.1328125">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="colourBlindRadioButton" layoutX="699.0" layoutY="33.0" mnemonicParsing="false" onAction="#changeMode" prefHeight="18.0" prefWidth="129.0" text="Colour Blind Mode" />
+   </children>
+</AnchorPane>
