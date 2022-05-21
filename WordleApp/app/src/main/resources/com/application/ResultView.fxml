@@ -8,7 +8,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="362.0" prefWidth="378.0" style="-fx-background-color: FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ResultsController">
+<AnchorPane prefHeight="192.0" prefWidth="404.0" style="-fx-background-color: FFF;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.controllers.ResultsController">
    <children>
       <Text layoutX="157.0" layoutY="42.0" strokeType="OUTSIDE" strokeWidth="0.0" text="STATISTICS">
          <font>
@@ -37,10 +37,5 @@
             <Label fx:id="maxStreak" contentDisplay="CENTER" prefHeight="18.0" prefWidth="59.0" style="-fx-alignment: center;" textAlignment="CENTER" textOverrun="CENTER_WORD_ELLIPSIS" GridPane.columnIndex="3" GridPane.halignment="CENTER" />
          </children>
       </GridPane>
-      <Text layoutX="115.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="GUESS DISTRIBUTION">
-         <font>
-            <Font size="18.0" />
-         </font>
-      </Text>
    </children>
 </AnchorPane>

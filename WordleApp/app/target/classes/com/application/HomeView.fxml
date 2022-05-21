@@ -38,7 +38,7 @@
                   <Font size="36.0" />
                </font>
                <graphic>
-                  <TextField fx:id="inputZeroZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                  <TextField fx:id="inputZeroZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -50,7 +50,7 @@
                   <Font size="36.0" />
                </font>
                <graphic>
-                  <TextField fx:id="inputOneZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                  <TextField fx:id="inputOneZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -62,7 +62,7 @@
                   <Font size="36.0" />
                </font>
                <graphic>
-                  <TextField fx:id="inputTwoZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                  <TextField fx:id="inputTwoZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -74,7 +74,7 @@
                   <Font size="36.0" />
                </font>
                <graphic>
-                  <TextField fx:id="inputThreeZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                  <TextField fx:id="inputThreeZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
                      <font>
                         <Font size="36.0" />
                      </font>
@@ -86,7 +86,7 @@
                   <Font size="36.0" />
                </font>
                <graphic>
-                  <TextField fx:id="inputFourZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed1stGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;" text="A">
+                  <TextField fx:id="inputFourZero" alignment="CENTER" maxHeight="70.0" maxWidth="70.0" minHeight="70.0" minWidth="70.0" onAction="#enterPressed1stGuess" prefHeight="70.0" prefWidth="70.0" style="-fx-background-color: FFF; -fx-border-color: FFF;">
                      <font>
                         <Font size="36.0" />
                      </font>

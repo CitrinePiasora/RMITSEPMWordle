@@ -20,6 +20,7 @@ public class Main extends Application {
         scene = new Scene(loadFXML("HomeView"), 850, 700);
         stage.setScene(scene);
         stage.show();
+        stage.setResizable(false);
     }
 
     public static void setRoot(String fxml) throws IOException {
