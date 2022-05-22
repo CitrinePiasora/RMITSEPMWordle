@@ -23,202 +23,79 @@ public class HomeController {
 
     private WordleSystem wordleSystem = new WordleSystem();
 
-    @FXML
-    private Label zeroZero;
-
-    @FXML
-    private TextField inputZeroZero;
-
-    @FXML
-    private Label oneZero;
-
-    @FXML
-    private TextField inputOneZero;
-
-    @FXML
-    private Label twoZero;
-
-    @FXML
-    private TextField inputTwoZero;
-
-    @FXML
-    private Label threeZero;
-
-    @FXML
-    private TextField inputThreeZero;
-
-    @FXML
-    private Label fourZero;
-
-    @FXML
-    private TextField inputFourZero;
-
-    @FXML
-    private Label zeroOne;
-
-    @FXML
-    private TextField inputZeroOne;
-
-    @FXML
-    private Label oneOne;
-
-    @FXML
-    private TextField inputOneOne;
-
-    @FXML
-    private Label TwoOne;
-
-    @FXML
-    private TextField inputTwoOne;
-
-    @FXML
-    private Label ThreeOne;
-
-    @FXML
-    private TextField inputThreeOne;
-
-    @FXML
-    private Label FourOne;
-
-    @FXML
-    private TextField inputFourOne;
-
-    @FXML
-    private Label ZeroTwo;
-
-    @FXML
-    private TextField inputZeroTwo;
-
-    @FXML
-    private Label OneTwo;
-
-    @FXML
-    private TextField inputOneTwo;
-
-    @FXML
-    private Label TwoTwo;
-
-    @FXML
-    private TextField inputTwoTwo;
-
-    @FXML
-    private Label ThreeTwo;
-
-    @FXML
-    private TextField inputThreeTwo;
-
-    @FXML
-    private Label FourTwo;
-
-    @FXML
-    private TextField inputFourTwo;
-
-    @FXML
-    private Label ZeroThree;
-
-    @FXML
-    private TextField inputZeroThree;
-
-    @FXML
-    private Label OneThree;
-
-    @FXML
-    private TextField inputOneThree;
-
-    @FXML
-    private Label TwoThree;
-
-    @FXML
-    private TextField inputTwoThree;
-
-    @FXML
-    private Label ThreeThree;
-
-    @FXML
-    private TextField inputThreeThree;
-
-    @FXML
-    private Label FourThree;
-
-    @FXML
-    private TextField inputFourThree;
-
-    @FXML
-    private Label zeroFour;
-
-    @FXML
-    private TextField inputZeroFour;
-
-    @FXML
-    private Label oneFour;
-
-    @FXML
-    private TextField inputOneFour;
-
-    @FXML
-    private Label twoFour;
-
-    @FXML
-    private TextField inputTwoFour;
-
-    @FXML
-    private Label threeFour;
-
-    @FXML
-    private TextField inputThreeFour;
-
-    @FXML
-    private Label fourFour;
-
-    @FXML
-    private TextField inputFourFour;
-
-    @FXML
-    private Label zeroFive;
-
-    @FXML
-    private TextField inputZeroFive;
-
-    @FXML
-    private Label oneFive;
-
-    @FXML
-    private TextField inputOneFive;
-
-    @FXML
-    private Label twoFive;
-
-    @FXML
-    private TextField inputTwoFive;
-
-    @FXML
-    private Label threeFive;
-
-    @FXML
-    private TextField inputThreeFive;
-
-    @FXML
-    private Label fourFive;
-
-    @FXML
-    private TextField inputFourFive;
-
-    @FXML
-    private RadioButton colourBlindRadioButton;
+    @FXML private Label zeroZero;
+    @FXML private TextField inputZeroZero;
+    @FXML private Label oneZero;
+    @FXML private TextField inputOneZero;
+    @FXML private Label twoZero;
+    @FXML private TextField inputTwoZero;
+    @FXML private Label threeZero;
+    @FXML private TextField inputThreeZero;
+    @FXML private Label fourZero;
+    @FXML private TextField inputFourZero;
+    @FXML private Label zeroOne;
+    @FXML private TextField inputZeroOne;
+    @FXML private Label oneOne;
+    @FXML private TextField inputOneOne;
+    @FXML private Label TwoOne;
+    @FXML private TextField inputTwoOne;
+    @FXML private Label ThreeOne;
+    @FXML private TextField inputThreeOne;
+    @FXML private Label FourOne;
+    @FXML private TextField inputFourOne;
+    @FXML private Label ZeroTwo;
+    @FXML private TextField inputZeroTwo;
+    @FXML private Label OneTwo;
+    @FXML private TextField inputOneTwo;
+    @FXML private Label TwoTwo;
+    @FXML private TextField inputTwoTwo;
+    @FXML private Label ThreeTwo;
+    @FXML private TextField inputThreeTwo;
+    @FXML private Label FourTwo;
+    @FXML private TextField inputFourTwo;
+    @FXML private Label ZeroThree;
+    @FXML private TextField inputZeroThree;
+    @FXML private Label OneThree;
+    @FXML private TextField inputOneThree;
+    @FXML private Label TwoThree;
+    @FXML private TextField inputTwoThree;
+    @FXML private Label ThreeThree;
+    @FXML private TextField inputThreeThree;
+    @FXML private Label FourThree;
+    @FXML private TextField inputFourThree;
+    @FXML private Label zeroFour;
+    @FXML private TextField inputZeroFour;
+    @FXML private Label oneFour;
+    @FXML private TextField inputOneFour;
+    @FXML private Label twoFour;
+    @FXML private TextField inputTwoFour;
+    @FXML private Label threeFour;
+    @FXML private TextField inputThreeFour;
+    @FXML private Label fourFour;
+    @FXML private TextField inputFourFour;
+    @FXML private Label zeroFive;
+    @FXML private TextField inputZeroFive;
+    @FXML private Label oneFive;
+    @FXML private TextField inputOneFive;
+    @FXML private Label twoFive;
+    @FXML private TextField inputTwoFive;
+    @FXML private Label threeFive;
+    @FXML private TextField inputThreeFive;
+    @FXML private Label fourFive;
+    @FXML private TextField inputFourFive;
+    @FXML private RadioButton colourBlindRadioButton;
     // ^ changes the boolean
 
     private boolean colourBlindMode = false;
 
+    //Standard Mode Colors
     private String standardModeCorrect = "#73A961";
-
     private String standardModeSemiCorrect = "#C7B250";
-
     private String standardModeIncorrect = "#787C7E";
-
+    
+    // Colorblind Mode Colors
     private String blindModeCorrect = "#EC712A";
-
     private String blindModeSemiCorrect = "#8DC0FC";
-
     private String blindModeIncorrect = "#787C7E";
 
     private Label labels[][] = new Label[5][6];

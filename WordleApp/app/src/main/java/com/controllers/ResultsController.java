@@ -16,7 +16,6 @@ import javafx.scene.chart.XYChart;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
 import javafx.util.StringConverter;
-import org.jfree.chart.axis.NumberTickUnit;
 
 public class ResultsController implements Initializable {
 
